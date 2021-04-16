@@ -19,8 +19,8 @@ def add_ball(atoms, xpos, xvel):
                 x = ix * s
                 y = iy * s
                 z = iz * s
-                if (x**2 + y**2 + z**2 > r**2):
-                    continue
+                #if (x**2 + y**2 + z**2 > r**2):
+                #    continue
                 x = x + xpos
                 atoms.append(Atom(x, y, z, xvel))
                 atoms.append(Atom(x, y+h, z+h, xvel))
